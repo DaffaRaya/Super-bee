@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagemobil.css">
+    <title>Document</title>
+    <script>
+        function updateClock() {
+  var currentTime = new Date();
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var seconds = currentTime.getSeconds();
+
+  // Menambahkan nol di depan angka jika angka tersebut kurang dari 10
+  hours = (hours < 10 ? "0" : "") + hours;
+  minutes = (minutes < 10 ? "0" : "") + minutes;
+  seconds = (seconds < 10 ? "0" : "") + seconds;
+
+  var timeString = hours + ":" + minutes + ":" + seconds;
+
+  // Mengubah konten pada elemen dengan ID "clock" menjadi waktu yang terkini
+  document.getElementById("clock").innerHTML = timeString;
+}
+
+// Memanggil fungsi updateClock setiap detik (1000 milidetik)
+setInterval(updateClock, 1000);
+    </script>
+</head>
+<body>
+    <div class="wave1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="1" d="M0,160L80,149.3C160,139,320,117,480,90.7C640,64,800,32,960,64C1120,96,1280,192,1360,240L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+    </div>
+
+    <nav>
+        <div class="clock"><div id="clock"></div></div>
+        <ul class="monkey">
+          <li class="monkey-child"><a href="#home">Home</a></li>
+          <li class="monkey-child"><a href="#introduce">Introduce</a></li>
+          <li class="monkey-child"><a href="#info">info</a></li>
+          <li class="monkey-child"><a href="#galeri">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <img src="../asset/EWE.png" alt="" class="w">
+
+    <div class="katalog">
+        <h1>
+        Katalog
+        </h1>
+        <div class="gmbr">
+            <img src="../asset/dec49f436e18d40986049418924220ba.png" alt="">
+            <a href="pagemobil.html"><h3>Mobil</h3></a>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="pageutama.html" class="link">back</a>
+    </div>
+    <div class="mprcs">
+        <div class="logo">
+            <img src="../asset/mopar.png" alt="">
+            <h2>Mopar Build</h2>
+        </div>
+        <div class="mpr1">
+            <img src="../asset/Pun.jpg" alt="">
+            <h2>Dodge Charger Hellepant</h2>
+            <p>
+                Mesin:Bensin V8 423 CUI Supercharger <br> transmisi 5 Speed Manual
+            </p>
+            <h1>Rp 1.800.000.000</h1>
+        </div>
+        <div class="mpr2">
+            <img src="../asset/Superbird.png" alt="">
+            <h2>Dodge Challenger Daytona</h2>
+            <p>
+                Mesin:Bensin V8 400 CUI N/A <br> transmisi 4 Speed Automatic
+            </p>
+            <h1>Rp 800.000.000</h1>
+        </div>
+        <div class="mpr3">
+            <img src="../asset/mprtn.jpg" alt="">
+            <h2>Dodge Challenger Mopar AWD</h2>
+            <p>
+                Mesin:Bensin V8 440 CUI Blown Supercharger <br> transmisi 6 Speed manual
+            </p>
+            <h1>Rp 2.800.000.000</h1>
+        </div>
+        <div class="mpr4">
+            <img src="../asset/dodge charger mopar edition.jpg" alt="">
+            <h2>Charge mopar edition</h2>
+            <p>
+                Mesin:Bensin V8 440 CUI Blown Supercharger <br> transmisi 5 Speed matic
+            </p>
+            <h1>Rp 1.000.000.000</h1>
+        </div>
+    </div>
+    <div class="rek">
+        <div class="corsair">
+            <div class="gambar1"><img src="../asset/ford.png" alt=""></div>
+            <img src="../asset/Galaxie.png" alt="">
+            <h2>Ford Galaxie 500</h2>
+            <p>
+                Mesin:430CUI bensin<br> Tipe kendaraan: Mobil
+            </p>
+            <h3>FORD</h3>
+            <h1>Rp 700.000.000</h1>
+            
+        </div>
+        <div class="century">
+            <div class="gambar2"><img src="../asset/tyt.png" alt=""></div>
+            <img src="../asset/century.png" alt="">
+            <h2>Toyota Century</h2>
+            <p>
+                Mesin: 2UR-FSE V8 Hybrid<br> Tipe kendaraan: Mobil
+            </p>
+            <h3>Toyota</h3>
+            
+            <h1>Rp 11.000.000.000</h1>
+        </div>
+
+        <div class="jumbosherman">
+            <div class="gambar3"><img src="../asset/lexus.png" alt=""></div>
+            <img src="../asset/Lexus IS300.png" alt="">
+            <h2>Lexus IS300</h2>
+            <p>
+                Mesin: 2JZ-GE <br> Tipe kendaraan: tank
+            </p>
+            <h3>Lexus</h3>
+            
+            <h1>Rp 200.000.000</h1>
+        </div>
+        
+        <div class="coronet">
+            <div class="gambar4"><img src="../asset/Dodge.png" alt=""></div>
+            <img src="../asset/Mnghindar.png" alt="">
+            <h2>73 Dodge Coronet</h2>
+            <p>
+                Mesin: 440 CUI V8 <br> Tipe kendaraan: Mobil
+            </p>
+            <h3>Dodge</h3>
+            
+            <h1>Rp 900.000.000</h1>
+        </div>
+        <div class="lc80">
+            <div class="gambar5"><img src="../asset/tyt.png" alt=""></div>
+            <img src="../asset/lc80.jpg" alt="">
+            <h2>Land Cruiser Series</h2>
+            <p>
+                Mesin: Diesel HD-T  <br> Tipe kendaraan: Mobil
+            </p>
+            <h3>Toyota</h3>
+            
+            <h1>Rp 450.000.000</h1>
+        </div>
+
+        <div class="pershing">
+            <div class="gambar6"><img src="../asset/Bmw.png" alt=""></div>
+            <img src="../asset/M4 GTS.png" alt="">
+            <h2>BMW M4 GTS </h2>
+            <p>
+                Mesin: 3.0L M Peformance <br> Tipe kendaraan: Mobil
+            </p>
+            <h3>BMW</h3>
+            
+            <h1>Rp 3.450.000.000</h1>
+        </div>
+    </div>
+     <div class="sarjana">
+        <img src="../asset/srjn.png" alt="">
+        <a href="datadiri.html"><h1>Sarjana Utama </h1></a>
+        <h3>Welcome</h3>
+        <h2>Calon presiden RI</h2>
+    </div> 
+</body>
+</html>
